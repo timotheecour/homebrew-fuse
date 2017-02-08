@@ -1,8 +1,8 @@
 class Securefs < Formula
   desc "Filesystem with transparent authenticated encryption"
   homepage "https://github.com/netheril96/securefs"
-  url "https://github.com/netheril96/securefs/archive/0.6.0.tar.gz"
-  sha256 "698b8251640bd8b6ef04f94147a1c05aaa8495ebea4a03faa08ed91c967bd3cb"
+  url "https://github.com/netheril96/securefs/archive/0.7.0.tar.gz"
+  sha256 "0e0bac7327a5652bdecf13bfcad530a65ca420ba37e965739e7eb6f0e3fa3b6e"
   head "https://github.com/netheril96/securefs.git"
 
   depends_on "cmake" => :build
