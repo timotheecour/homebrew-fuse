@@ -15,7 +15,11 @@ class S3fs < Formula
 
   if OS.mac?
     depends_on :osxfuse
+  elsif OS.linux?
+    depends_on "curl"
+    depends_on "libfuse"
   end
+
 
   def install
     system "./autogen.sh"
