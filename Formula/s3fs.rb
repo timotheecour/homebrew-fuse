@@ -13,7 +13,9 @@ class S3fs < Formula
   depends_on "nettle"
   depends_on "libgcrypt"
 
-  depends_on :osxfuse
+  if OS.mac?
+    depends_on :osxfuse
+  end
 
   def install
     system "./autogen.sh"
